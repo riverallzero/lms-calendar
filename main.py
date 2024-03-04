@@ -90,6 +90,7 @@ def main():
 
     creds = None
     # token.pickle은 사용자의 접근과 토큰을 저장합니다.
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     with open(os.path.join(BASE_DIR, 'token.pickle'), 'rb') as token:
         creds = pickle.load(token)
 
