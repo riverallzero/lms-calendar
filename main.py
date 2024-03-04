@@ -37,7 +37,7 @@ def finding_video():
     options.add_argument("--no-sandbox")
 
     # chrome driver
-    driver = webdriver.Chrome('chromedriver', options=options)
+    driver = webdriver.Chrome(options=options)
 
     url = 'https://ieilms.jbnu.ac.kr/'
     driver.get(url)
