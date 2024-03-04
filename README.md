@@ -1,9 +1,11 @@
-# lms-calendar
-전북대학교 LMS에서 원하는 특정 강의 영상이 올라오면 영상 출석 기간을 구글 달력에 자동으로 저장해주는 프로그램
+# 📅 lms-calendar
+전북대학교 LMS에서 원하는 특정 강의 영상이 올라오면 **영상 출석 기간**을 **구글 달력**에 자동으로 저장해주는 프로그램
 
 ![](./asset/calendar.png)
 
 ## setting
+0. Fork!!!
+
 ### API
 1. https://riverallzero.tistory.com/76 참고해 Google Calendar API 설정 
 2. [test.py](https://github.com/riverallzero/lms-calendar/blob/main/test.py) 실행하며 작동 확인
@@ -20,6 +22,7 @@
 
 ### code
 7. ```title = '[컴퓨터비전] ' + df['title'][r]``` [main.py](https://github.com/riverallzero/lms-calendar/blob/main/main.py) - line 110: 과목명 변경
+8. (option) ```"0 0 * * 1-3"``` [python-package.yml](https://github.com/riverallzero/lms-calendar/blob/main/.github/workflows/python-package.yml): 월요일부터 수요일 자정마다 코드 실행
 
 ### file
-8. last_index.txt 파일 삭제
+9. [last_index.txt](https://github.com/riverallzero/lms-calendar/blob/main/last_index.txt) 파일 삭제
